@@ -27,6 +27,7 @@
 		519981441BB4BB6900DCCE65 /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 519981431BB4BB6900DCCE65 /* Media.m */; };
 		519981481BB4BC8E00DCCE65 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 519981471BB4BC8E00DCCE65 /* Comment.m */; };
 		5199814C1BB4BD5F00DCCE65 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5199814B1BB4BD5F00DCCE65 /* DataSource.m */; };
+		519981541BB7588200DCCE65 /* MediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 519981531BB7588200DCCE65 /* MediaTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		519981471BB4BC8E00DCCE65 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
 		5199814A1BB4BD5F00DCCE65 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
 		5199814B1BB4BD5F00DCCE65 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		519981521BB7588200DCCE65 /* MediaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MediaTableViewCell.h; path = Blocstagram/MediaTableViewCell.h; sourceTree = "<group>"; };
+		519981531BB7588200DCCE65 /* MediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MediaTableViewCell.m; path = Blocstagram/MediaTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,7 @@
 				510E30921BB1FA44000078C6 /* AppDelegate */,
 				510E30A81BB1FA98000078C6 /* Images */,
 				510E30AC1BB1FB46000078C6 /* ImagesTableViewController */,
+				519981551BB7588600DCCE65 /* MediaTableViewCell */,
 				519981411BB4BA1D00DCCE65 /* User */,
 				519981451BB4BB6D00DCCE65 /* Media */,
 				519981491BB4BC9500DCCE65 /* Comment */,
@@ -220,6 +224,16 @@
 				5199814B1BB4BD5F00DCCE65 /* DataSource.m */,
 			);
 			name = DataSource;
+			sourceTree = "<group>";
+		};
+		519981551BB7588600DCCE65 /* MediaTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				519981521BB7588200DCCE65 /* MediaTableViewCell.h */,
+				519981531BB7588200DCCE65 /* MediaTableViewCell.m */,
+			);
+			name = MediaTableViewCell;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +347,7 @@
 			files = (
 				519981401BB4BA1800DCCE65 /* User.m in Sources */,
 				519981481BB4BC8E00DCCE65 /* Comment.m in Sources */,
+				519981541BB7588200DCCE65 /* MediaTableViewCell.m in Sources */,
 				519981441BB4BB6900DCCE65 /* Media.m in Sources */,
 				510E30711BB1F979000078C6 /* AppDelegate.m in Sources */,
 				5199814C1BB4BD5F00DCCE65 /* DataSource.m in Sources */,

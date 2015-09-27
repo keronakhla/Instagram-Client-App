@@ -82,7 +82,7 @@
 - (Comment *) randomComment {
     Comment *comment = [[Comment alloc] init];
     
-    comment.form = [self randomUser];
+    comment.from = [self randomUser];
     comment.text = [self randomSentence];
     
     return comment;
