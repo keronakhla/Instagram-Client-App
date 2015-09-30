@@ -17,5 +17,5 @@
 @property (nonatomic, strong, readonly) NSArray *mediaItems;
 
 - (void) deleteMediaItem:(Media *)item;
-- (void) replaceObjectInMediaItemsAtIndex:(NSUInteger)index withObject:(id)object;
+
 @end
