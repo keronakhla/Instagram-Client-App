@@ -41,7 +41,9 @@
     //[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"imageCell"];
     [self.tableView registerClass:[MediaTableViewCell class] forCellReuseIdentifier:@"mediaCell"];
 
+
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
