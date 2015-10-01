@@ -51,7 +51,7 @@ NSString *const LoginViewControllerDidGetAccessTokenNotification = @"LoginViewCo
 
 // adding an action method
 - (IBAction)Back{
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.webView goBack];
 }
 
 - (void)didReceiveMemoryWarning {
