@@ -10,7 +10,7 @@
 
 @class User;
 
-@interface Media : NSObject
+@interface Media : NSObject <NSCoding>
 
 @property (nonatomic, strong) NSString *idNumber;
 @property (nonatomic, strong) User *user;
@@ -20,5 +20,6 @@
 @property (nonatomic, strong) NSArray *comments; 
 
 - (instancetype) initWithDictionary:(NSDictionary *)mediaDictionary;
+
 
 @end
