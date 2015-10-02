@@ -55,6 +55,10 @@
                 
                 dispatch_async(dispatch_get_main_queue(), ^{
                     if (storedMediaItems.count > 0) {
+                        ///////////////////
+                        //this snipped makes the app refresh automatically upon opening
+                        [self populateDataWithParameters:nil completionHandler:nil];
+                        ////////////////////////
                         NSMutableArray *mutableMediaItems = [storedMediaItems mutableCopy];
                         
                         [self willChangeValueForKey:@"mediaItems"];
