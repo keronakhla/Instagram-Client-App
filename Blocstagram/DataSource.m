@@ -42,7 +42,7 @@
     self = [super init];
     
     if (self) {
-        //[self registerForAccessTokenNotification];
+        [self registerForAccessTokenNotification];
         [self populateDataWithParameters:nil completionHandler:nil];
     }
     
