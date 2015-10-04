@@ -47,6 +47,16 @@
     // #3
     self.scrollView.contentSize = self.media.image.size;
     
+    
+    //naming my button like a prince in Game of Thrones :)
+    UIButton *shareOfTheHouseButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [shareOfTheHouseButton addTarget:self action:@selector(shareOfTheHouseAction) forControlEvents:UIControlEventTouchUpInside];
+    [shareOfTheHouseButton setTitle:@"Share" forState:UIControlStateNormal];
+    [shareOfTheHouseButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [shareOfTheHouseButton sizeToFit];
+    shareOfTheHouseButton.frame = CGRectMake(300.0, 10.0, 80.0, 45.0);
+    
+    
     self.tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapFired:)];
     
     self.doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTapFired:)];
@@ -56,7 +66,23 @@
     
     [self.scrollView addGestureRecognizer:self.tap];
     [self.scrollView addGestureRecognizer:self.doubleTap];
+    
+    
+    [self.view addSubview:shareOfTheHouseButton];
+    
 }
+
+- (void)shareOfTheHouseAction {
+    NSMutableArray *itemsToShare = [NSMutableArray array];
+    if (self.media.image) {
+        [itemsToShare addObject:self.media.image];
+    }
+    if (itemsToShare.count > 0) {
+        UIActivityViewController *activity = [[UIActivityViewController alloc] initWithActivityItems:itemsToShare applicationActivities:nil];
+        [self presentViewController:activity animated:YES completion:nil];
+    }
+}
+
 #pragma mark - Gesture Recognizers
 
 - (void) tapFired:(UITapGestureRecognizer *)sender {
