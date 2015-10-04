@@ -23,6 +23,7 @@
 		510E30A61BB1FA77000078C6 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 510E309C1BB1FA77000078C6 /* 9.jpg */; };
 		510E30A71BB1FA77000078C6 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 510E309D1BB1FA77000078C6 /* 10.jpg */; };
 		510E30AB1BB1FB34000078C6 /* ImagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 510E30AA1BB1FB34000078C6 /* ImagesTableViewController.m */; };
+		5156BB7F1BC0B77600CABD57 /* MediaFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5156BB7E1BC0B77600CABD57 /* MediaFullScreenViewController.m */; };
 		51881D5E1BBCF347003B423C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51881D5D1BBCF347003B423C /* LoginViewController.m */; };
 		519981401BB4BA1800DCCE65 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5199813F1BB4BA1800DCCE65 /* User.m */; };
 		519981441BB4BB6900DCCE65 /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 519981431BB4BB6900DCCE65 /* Media.m */; };
@@ -65,6 +66,8 @@
 		510E309D1BB1FA77000078C6 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
 		510E30A91BB1FB34000078C6 /* ImagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImagesTableViewController.h; path = ../ImagesTableViewController.h; sourceTree = "<group>"; };
 		510E30AA1BB1FB34000078C6 /* ImagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImagesTableViewController.m; path = ../ImagesTableViewController.m; sourceTree = "<group>"; };
+		5156BB7D1BC0B77600CABD57 /* MediaFullScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFullScreenViewController.h; sourceTree = "<group>"; };
+		5156BB7E1BC0B77600CABD57 /* MediaFullScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFullScreenViewController.m; sourceTree = "<group>"; };
 		51881D5C1BBCF347003B423C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		51881D5D1BBCF347003B423C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		5199813E1BB4BA1800DCCE65 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -128,6 +131,7 @@
 				510E30A81BB1FA98000078C6 /* Images */,
 				510E30AC1BB1FB46000078C6 /* ImagesTableViewController */,
 				519981551BB7588600DCCE65 /* MediaTableViewCell */,
+				5156BB801BC0B78000CABD57 /* MediaFullScreenViewController */,
 				519981411BB4BA1D00DCCE65 /* User */,
 				519981451BB4BB6D00DCCE65 /* Media */,
 				519981491BB4BC9500DCCE65 /* Comment */,
@@ -199,6 +203,16 @@
 				510E30AA1BB1FB34000078C6 /* ImagesTableViewController.m */,
 			);
 			name = ImagesTableViewController;
+			sourceTree = "<group>";
+		};
+		5156BB801BC0B78000CABD57 /* MediaFullScreenViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5156BB7D1BC0B77600CABD57 /* MediaFullScreenViewController.h */,
+				5156BB7E1BC0B77600CABD57 /* MediaFullScreenViewController.m */,
+			);
+			name = MediaFullScreenViewController;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		51881D5F1BBCF34E003B423C /* LoginViewController */ = {
@@ -417,6 +431,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5156BB7F1BC0B77600CABD57 /* MediaFullScreenViewController.m in Sources */,
 				519981401BB4BA1800DCCE65 /* User.m in Sources */,
 				519981481BB4BC8E00DCCE65 /* Comment.m in Sources */,
 				519981541BB7588200DCCE65 /* MediaTableViewCell.m in Sources */,
