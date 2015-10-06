@@ -97,6 +97,14 @@
     return img;
 }
 
+- (UIImage *) imageByScalingToSize:(CGSize)size andCroppingWithRect:(CGRect)rect{
+    UIImage *image = [[UIImage alloc] init];
+    [image imageWithFixedOrientation];
+    [image imageResizedToMatchAspectRatioOfSize:size];
+    [image imageCroppedToRect:rect];
+    return image;
+}
+
 - (UIImage *) imageResizedToMatchAspectRatioOfSize:(CGSize)size {
     CGFloat horizontalRatio = size.width / self.size.width;
     CGFloat verticalRatio = size.height / self.size.height;
