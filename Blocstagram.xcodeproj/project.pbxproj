@@ -32,6 +32,7 @@
 		519981481BB4BC8E00DCCE65 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 519981471BB4BC8E00DCCE65 /* Comment.m */; };
 		5199814C1BB4BD5F00DCCE65 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5199814B1BB4BD5F00DCCE65 /* DataSource.m */; };
 		519981541BB7588200DCCE65 /* MediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 519981531BB7588200DCCE65 /* MediaTableViewCell.m */; };
+		51DBFE941BC4485100B7E8BB /* ComposeCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DBFE931BC4485100B7E8BB /* ComposeCommentView.m */; };
 		594E705A12E197CAA493E17E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F33B506CE38A75BD8DBA143E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,8 @@
 		5199814B1BB4BD5F00DCCE65 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
 		519981521BB7588200DCCE65 /* MediaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MediaTableViewCell.h; path = Blocstagram/MediaTableViewCell.h; sourceTree = "<group>"; };
 		519981531BB7588200DCCE65 /* MediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MediaTableViewCell.m; path = Blocstagram/MediaTableViewCell.m; sourceTree = "<group>"; };
+		51DBFE921BC4485100B7E8BB /* ComposeCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeCommentView.h; sourceTree = "<group>"; };
+		51DBFE931BC4485100B7E8BB /* ComposeCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeCommentView.m; sourceTree = "<group>"; };
 		63B3B656DAB14321D6DBB823 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9F8463C6CC65BA69E0A632D6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F33B506CE38A75BD8DBA143E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				510E306A1BB1F979000078C6 /* Blocstagram */,
+				510E307A1BB1F979000078C6 /* LaunchScreen.xib */,
 				510E30841BB1F979000078C6 /* BlocstagramTests */,
 				510E30691BB1F979000078C6 /* Products */,
 				A0CA0897D2F883DD4FD3E73E /* Pods */,
@@ -133,21 +137,21 @@
 		510E306A1BB1F979000078C6 /* Blocstagram */ = {
 			isa = PBXGroup;
 			children = (
+				510E30781BB1F979000078C6 /* Images.xcassets */,
 				510E30921BB1FA44000078C6 /* AppDelegate */,
+				5156BB931BC2253C00CABD57 /* CircleSpinnerView */,
+				519981491BB4BC9500DCCE65 /* Comment */,
+				51DBFE951BC4485B00B7E8BB /* ComposeCommentView */,
+				5199814D1BB4BD6200DCCE65 /* DataSource */,
 				510E30A81BB1FA98000078C6 /* Images */,
 				510E30AC1BB1FB46000078C6 /* ImagesTableViewController */,
-				519981551BB7588600DCCE65 /* MediaTableViewCell */,
-				5156BB801BC0B78000CABD57 /* MediaFullScreenViewController */,
-				519981411BB4BA1D00DCCE65 /* User */,
-				519981451BB4BB6D00DCCE65 /* Media */,
-				519981491BB4BC9500DCCE65 /* Comment */,
-				5199814D1BB4BD6200DCCE65 /* DataSource */,
-				51881D5F1BBCF34E003B423C /* LoginViewController */,
-				510E30781BB1F979000078C6 /* Images.xcassets */,
-				510E307A1BB1F979000078C6 /* LaunchScreen.xib */,
-				5156BB931BC2253C00CABD57 /* CircleSpinnerView */,
 				5156BB971BC2272F00CABD57 /* LikeButton */,
+				51881D5F1BBCF34E003B423C /* LoginViewController */,
+				519981451BB4BB6D00DCCE65 /* Media */,
+				5156BB801BC0B78000CABD57 /* MediaFullScreenViewController */,
+				519981551BB7588600DCCE65 /* MediaTableViewCell */,
 				510E306B1BB1F979000078C6 /* Supporting Files */,
+				519981411BB4BA1D00DCCE65 /* User */,
 			);
 			path = Blocstagram;
 			sourceTree = "<group>";
@@ -294,6 +298,15 @@
 			);
 			name = MediaTableViewCell;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		51DBFE951BC4485B00B7E8BB /* ComposeCommentView */ = {
+			isa = PBXGroup;
+			children = (
+				51DBFE921BC4485100B7E8BB /* ComposeCommentView.h */,
+				51DBFE931BC4485100B7E8BB /* ComposeCommentView.m */,
+			);
+			name = ComposeCommentView;
 			sourceTree = "<group>";
 		};
 		5AFC2EB1261018C902A75856 /* Frameworks */ = {
@@ -467,6 +480,7 @@
 				51881D5E1BBCF347003B423C /* LoginViewController.m in Sources */,
 				5156BB961BC2272A00CABD57 /* LikeButton.m in Sources */,
 				5199814C1BB4BD5F00DCCE65 /* DataSource.m in Sources */,
+				51DBFE941BC4485100B7E8BB /* ComposeCommentView.m in Sources */,
 				510E306E1BB1F979000078C6 /* main.m in Sources */,
 				510E30AB1BB1FB34000078C6 /* ImagesTableViewController.m in Sources */,
 			);
@@ -497,6 +511,7 @@
 				510E307B1BB1F979000078C6 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = Blocstagram;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
