@@ -22,6 +22,7 @@
 
 @property (nonatomic, strong) Media *mediaItem;
 @property (nonatomic, weak) id <MediaTableViewCellDelegate> delegate;
+@property (nonatomic, assign) NSInteger *likeAmount;
 
 + (CGFloat) heightForMediaItem:(Media *)mediaItem width:(CGFloat) width;
 
