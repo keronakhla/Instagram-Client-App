@@ -88,15 +88,25 @@
 
 - (void) setIsWritingComment:(BOOL)isWritingComment animated:(BOOL)animated {
     _isWritingComment = isWritingComment;
-    
     if (animated) {
-        [UIView animateWithDuration:0.2 animations:^{
-            [self layoutSubviews];
-        }];
+        [UIView animateWithDuration:1.0
+                              delay:0.0
+             usingSpringWithDamping:0.2
+              initialSpringVelocity:0.4
+                            options:UIViewAnimationCurveEaseOut
+            animations:^{
+                [self layoutSubviews];
+            }
+                         completion:^(BOOL finished){
+                         }
+                         ];
     } else {
         [self layoutSubviews];
     }
+    
 }
+    
+    
 
 - (void) setText:(NSString *)text {
     _text = text;
