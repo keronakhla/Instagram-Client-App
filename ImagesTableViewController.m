@@ -99,6 +99,9 @@
     
     if (imageVC) {
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:imageVC];
+        nav.modalPresentationStyle = UIModalPresentationPopover;
+        UIPopoverPresentationController *popoverController = nav.popoverPresentationController;
+        popoverController.barButtonItem = sender;
         [self presentViewController:nav animated:YES completion:nil];
     }
     
@@ -134,9 +137,18 @@
 
 - (void) cell:(MediaTableViewCell *)cell didTapImageView:(UIImageView *)imageView {
     MediaFullScreenViewController *fullScreenVC = [[MediaFullScreenViewController alloc] initWithMedia:cell.mediaItem];
-    
-    [self presentViewController:fullScreenVC animated:YES completion:nil];
+    if (self.traitCollection.horizontalSizeClass == UIUserInterfaceSizeClassRegular) {
+        fullScreenVC.modalPresentationStyle = UIModalPresentationFormSheet;
+    }    [self presentViewController:fullScreenVC animated:YES completion:nil];
 }
+
+
+
+
+
+
+
+
 
 - (void) cell:(MediaTableViewCell *)cell didLongPressImageView:(UIImageView *)imageView {
     NSMutableArray *itemsToShare = [NSMutableArray array];
@@ -239,17 +251,9 @@
 
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    //Media *item = [DataSource sharedInstance].mediaItems[indexPath.row];
-    //UIImage *image = item.image;
-    
-    /*************/
-    Media *item = [self item][indexPath.row];
-    //UIImage *image = item.image;
-    /*************/
-    
-    
-    
-    return [MediaTableViewCell heightForMediaItem:item width:CGRectGetWidth(self.view.frame)];
+    Media *item = [DataSource sharedInstance].mediaItems[indexPath.row];
+    return [MediaTableViewCell heightForMediaItem:item width:CGRectGetWidth(self.view.frame) traitCollection:self.view.traitCollection];
+
 
 }
 

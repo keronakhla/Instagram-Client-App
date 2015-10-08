@@ -74,7 +74,7 @@ static NSString * const reuseIdentifier = @"Cell";
             if ([PHPhotoLibrary authorizationStatus] == PHAuthorizationStatusAuthorized) {
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self loadAssets];
-                    [self.collectionView reloadData];
+                    
                 });
             }
         }];
@@ -128,7 +128,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:PHImageManagerMaximumSize contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage *resultImage, NSDictionary *info)
      {
          CropImageViewController *cropVC = [[CropImageViewController alloc] initWithImage:resultImage];
-         cropVC.delegate = self;
+         //cropVC.delegate = self;
          [self.navigationController pushViewController:cropVC animated:YES];
      }];
     
