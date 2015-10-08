@@ -16,6 +16,7 @@
 @property (nonatomic, strong) CropBox *cropBox;
 @property (nonatomic, assign) BOOL hasLoadedOnce;
 
+
 @end
 
 @implementation CropImageViewController
@@ -36,6 +37,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //self.topView = [UIToolbar new];
+    //self.bottomView = [UIToolbar new];
+    
     self.view.clipsToBounds = YES;
     
     [self.view addSubview:self.cropBox];
@@ -59,6 +64,9 @@
     cropRect.size = CGSizeMake(edgeSize, edgeSize);
     
     CGSize size = self.view.frame.size;
+    
+    CGFloat width = CGRectGetWidth(self.view.bounds);
+    [self.cropBox addWidthCropBoxToolbar:width layoutGuide:self.topLayoutGuide.length];
     
     self.cropBox.frame = cropRect;
     self.cropBox.center = CGPointMake(size.width / 2, size.height / 2);
