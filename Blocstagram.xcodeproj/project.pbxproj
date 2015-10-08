@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5102D2601BC63C1F009BAAB1 /* CropBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 5102D25F1BC63C1F009BAAB1 /* CropBox.m */; };
+		5102D2641BC63F01009BAAB1 /* CropImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5102D2631BC63F01009BAAB1 /* CropImageViewController.m */; };
+		5102D26C1BC64085009BAAB1 /* ImageLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5102D26B1BC64085009BAAB1 /* ImageLibraryViewController.m */; };
 		510E306E1BB1F979000078C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 510E306D1BB1F979000078C6 /* main.m */; };
 		510E30711BB1F979000078C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 510E30701BB1F979000078C6 /* AppDelegate.m */; };
 		510E30791BB1F979000078C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 510E30781BB1F979000078C6 /* Images.xcassets */; };
@@ -50,6 +53,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5102D25E1BC63C1F009BAAB1 /* CropBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropBox.h; sourceTree = "<group>"; };
+		5102D25F1BC63C1F009BAAB1 /* CropBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropBox.m; sourceTree = "<group>"; };
+		5102D2621BC63F01009BAAB1 /* CropImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropImageViewController.h; sourceTree = "<group>"; };
+		5102D2631BC63F01009BAAB1 /* CropImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropImageViewController.m; sourceTree = "<group>"; };
+		5102D26A1BC64085009BAAB1 /* ImageLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLibraryViewController.h; sourceTree = "<group>"; };
+		5102D26B1BC64085009BAAB1 /* ImageLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLibraryViewController.m; sourceTree = "<group>"; };
 		510E30681BB1F979000078C6 /* Blocstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blocstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		510E306C1BB1F979000078C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		510E306D1BB1F979000078C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -122,6 +131,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5102D2611BC63C28009BAAB1 /* CropBox */ = {
+			isa = PBXGroup;
+			children = (
+				5102D25E1BC63C1F009BAAB1 /* CropBox.h */,
+				5102D25F1BC63C1F009BAAB1 /* CropBox.m */,
+			);
+			name = CropBox;
+			sourceTree = "<group>";
+		};
+		5102D2651BC63F06009BAAB1 /* CropImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5102D2621BC63F01009BAAB1 /* CropImageViewController.h */,
+				5102D2631BC63F01009BAAB1 /* CropImageViewController.m */,
+			);
+			name = CropImageViewController;
+			sourceTree = "<group>";
+		};
+		5102D26D1BC6408C009BAAB1 /* ImageLibraryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5102D26A1BC64085009BAAB1 /* ImageLibraryViewController.h */,
+				5102D26B1BC64085009BAAB1 /* ImageLibraryViewController.m */,
+			);
+			name = ImageLibraryViewController;
+			sourceTree = "<group>";
+		};
 		510E305F1BB1F979000078C6 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +200,9 @@
 				51DBFE991BC4595200B7E8BB /* CameraToolbar */,
 				51DBFE9D1BC45B4600B7E8BB /* CameraViewController */,
 				51DBFEA11BC4634D00B7E8BB /* UIImage+ImageUtilities */,
+				5102D2611BC63C28009BAAB1 /* CropBox */,
+				5102D2651BC63F06009BAAB1 /* CropImageViewController */,
+				5102D26D1BC6408C009BAAB1 /* ImageLibraryViewController */,
 			);
 			path = Blocstagram;
 			sourceTree = "<group>";
@@ -513,7 +552,10 @@
 				5156BB7F1BC0B77600CABD57 /* MediaFullScreenViewController.m in Sources */,
 				5156BB921BC2253600CABD57 /* CircleSpinnerView.m in Sources */,
 				519981401BB4BA1800DCCE65 /* User.m in Sources */,
+				5102D26C1BC64085009BAAB1 /* ImageLibraryViewController.m in Sources */,
+				5102D2601BC63C1F009BAAB1 /* CropBox.m in Sources */,
 				519981481BB4BC8E00DCCE65 /* Comment.m in Sources */,
+				5102D2641BC63F01009BAAB1 /* CropImageViewController.m in Sources */,
 				519981541BB7588200DCCE65 /* MediaTableViewCell.m in Sources */,
 				519981441BB4BB6900DCCE65 /* Media.m in Sources */,
 				51DBFE981BC4594E00B7E8BB /* CameraToolbar.m in Sources */,
