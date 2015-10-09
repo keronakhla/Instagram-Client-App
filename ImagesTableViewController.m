@@ -139,7 +139,8 @@
     MediaFullScreenViewController *fullScreenVC = [[MediaFullScreenViewController alloc] initWithMedia:cell.mediaItem];
     if (self.traitCollection.horizontalSizeClass == UIUserInterfaceSizeClassRegular) {
         fullScreenVC.modalPresentationStyle = UIModalPresentationFormSheet;
-    }    [self presentViewController:fullScreenVC animated:YES completion:nil];
+    }
+    [self presentViewController:fullScreenVC animated:YES completion:nil];
 }
 
 

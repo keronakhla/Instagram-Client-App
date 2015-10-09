@@ -407,7 +407,7 @@
     } else {
         self.navigationItem.rightBarButtonItem = self.sendBarButton;
     }
-    
+    [self createConstraints];
     [self.filterCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
     
     self.view.backgroundColor = [UIColor whiteColor];
@@ -416,6 +416,12 @@
     self.navigationItem.title = NSLocalizedString(@"Apply Filter", @"apply filter view title");
 }
 
+-(void) createConstraints{
+    NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_previewImageView, _filterCollectionView, _sendButton);
+    NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[_previewImageView][_filterCollectionView][_sendButton]" options:kNilOptions metrics:nil views:viewsDictionary];
+    [self.view addConstraints:constraints];
+
+}
 
 
 
