@@ -27,6 +27,7 @@
 		510E30A61BB1FA77000078C6 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 510E309C1BB1FA77000078C6 /* 9.jpg */; };
 		510E30A71BB1FA77000078C6 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 510E309D1BB1FA77000078C6 /* 10.jpg */; };
 		510E30AB1BB1FB34000078C6 /* ImagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 510E30AA1BB1FB34000078C6 /* ImagesTableViewController.m */; };
+		510E399F1BC9B56E00EDC69F /* UserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 510E399E1BC9B56E00EDC69F /* UserTests.m */; };
 		5156BB7F1BC0B77600CABD57 /* MediaFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5156BB7E1BC0B77600CABD57 /* MediaFullScreenViewController.m */; };
 		5156BB921BC2253600CABD57 /* CircleSpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5156BB911BC2253600CABD57 /* CircleSpinnerView.m */; };
 		5156BB961BC2272A00CABD57 /* LikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5156BB951BC2272A00CABD57 /* LikeButton.m */; };
@@ -84,6 +85,7 @@
 		510E309D1BB1FA77000078C6 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
 		510E30A91BB1FB34000078C6 /* ImagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImagesTableViewController.h; path = ../ImagesTableViewController.h; sourceTree = "<group>"; };
 		510E30AA1BB1FB34000078C6 /* ImagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImagesTableViewController.m; path = ../ImagesTableViewController.m; sourceTree = "<group>"; };
+		510E399E1BC9B56E00EDC69F /* UserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTests.m; sourceTree = "<group>"; };
 		5156BB7D1BC0B77600CABD57 /* MediaFullScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFullScreenViewController.h; sourceTree = "<group>"; };
 		5156BB7E1BC0B77600CABD57 /* MediaFullScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFullScreenViewController.m; sourceTree = "<group>"; };
 		5156BB901BC2253600CABD57 /* CircleSpinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleSpinnerView.h; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 			children = (
 				510E30871BB1F979000078C6 /* BlocstagramTests.m */,
 				510E30851BB1F979000078C6 /* Supporting Files */,
+				510E399E1BC9B56E00EDC69F /* UserTests.m */,
 			);
 			path = BlocstagramTests;
 			sourceTree = "<group>";
@@ -588,6 +591,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510E399F1BC9B56E00EDC69F /* UserTests.m in Sources */,
 				510E30881BB1F979000078C6 /* BlocstagramTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
